@@ -1,4 +1,4 @@
-FROM covid19rmd 
+FROM rocker/shiny:latest 
 
 MAINTAINER J. (Jerwin) Wieser "j2.wieser@gmail.com"
 
@@ -17,16 +17,13 @@ RUN apt-get update && apt-get install -y  \
             #unixodbc-dev \
             #libpq-dev \
             && rm -rf /var/lib/apt/lists/*
-	
 
 # install needed R packages
 RUN    R -e "install.packages(c('tidyverse', 'flexdashboard', 'knitr', 'plotly', 'shiny'), dependencies = TRUE, repo='http://cran.r-project.org')"
 
-
 # make directory and copy Rmarkdown flexdashboard file in it
 RUN mkdir -p /bin
 COPY dashboard_example.Rmd    /bin/dashboard_example.Rmd
-
 
 # make all app files readable (solves issue when dev in Windows, but building in Ubuntu)
 RUN chmod -R 755 /bin
