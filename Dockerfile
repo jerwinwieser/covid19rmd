@@ -1,4 +1,4 @@
-FROM rocker/shiny:latest 
+FROM openanalytics/r-shiny
 
 MAINTAINER J. (Jerwin) Wieser "j2.wieser@gmail.com"
 
