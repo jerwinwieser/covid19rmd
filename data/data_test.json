@@ -1,0 +1,25 @@
+[
+    {
+        "country": "Afghanistan",
+        "country_code": "AFG",
+        "continent": "Asia",
+        "population": 38928341,
+        "indicator": "cases",
+        "weekly_count": 0,
+        "year_week": "2020-01",
+        "cumulative_count": 0,
+        "source": "Epidemic intelligence national data"
+    },
+    {
+        "country": "Afghanistan",
+        "country_code": "AFG",
+        "continent": "Asia",
+        "population": 38928341,
+        "indicator": "cases",
+        "weekly_count": 0,
+        "year_week": "2020-02",
+        "rate_14_day": "0",
+        "cumulative_count": 0,
+        "source": "Epidemic intelligence national data"
+    }
+]
